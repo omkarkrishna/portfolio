@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Omkar Krishna</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="dark-theme">
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle">Toggle Theme</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="about" class="container fade">
-        <h1>About Me</h1>
-        <p>Ready to join immediately | Skilled in Cloud, DevOps, and Automation | Final-year B.Tech (AI/ML) student with hands-on experience in AWS, Azure, Docker, Terraform, Kubernetes, and CI/CD tools. Eager to contribute to real-world cloud infrastructure projects and deliver production-ready solutions.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container fade">
-        <h2>Projects</h2>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Omkar Krishna</h1>
+      <nav>
         <ul>
-            <li><a href="https://github.com/omkarkrishna/CI-CD">CI/CD Project</a></li>
-            <li><a href="https://github.com/omkarkrishna/azure-cafe">Azure Café Project</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="container fade">
-        <h2>Certifications</h2>
-        <ul>
-            <li><a href="https://www.certification-link.com/aws">AWS Certified Solutions Architect</a></li>
-            <li><a href="https://www.certification-link.com/azure">Microsoft Certified: Azure Fundamentals</a></li>
-        </ul>
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Ready to join immediately | Skilled in Cloud, DevOps, and Automation | Final-year B.Tech (AI/ML) student with hands-on experience in AWS, Azure, Docker, Terraform, Kubernetes, and CI/CD tools. Eager to contribute to real-world cloud infrastructure projects and deliver production-ready solutions.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container fade">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required />
-            <input type="email" id="email" placeholder="Your Email" required />
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="form-feedback"></p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>CI/CD Pipeline</h3>
+          <p>Automated cloud infrastructure deployments with Jenkins and Terraform.</p>
+          <a href="https://github.com/yourusername/cicd-pipeline" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Azure Café</h3>
+          <p>Developed a cloud-based application using Azure Services for a café management system.</p>
+          <a href="https://github.com/yourusername/azure-cafe" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="cert-card">
+        <img src="aws-cert.jpg" alt="AWS Certification">
+        <p>AWS Certified Solutions Architect - Associate</p>
+        <a href="https://www.aws.com/certifications" target="_blank">Verify on AWS</a>
+      </div>
+      <div class="cert-card">
+        <img src="azure-cert.png" alt="Azure Certification">
+        <p>Microsoft Certified: Azure Fundamentals</p>
+        <a href="https://learn.microsoft.com/en-us/certifications/azure-fundamentals/" target="_blank">Verify on Microsoft</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">Visit my LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Omkar Krishna. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
