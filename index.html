@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Omkar Krishna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Toggle Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container fade">
+        <h1>About Me</h1>
+        <p>Ready to join immediately | Skilled in Cloud, DevOps, and Automation | Final-year B.Tech (AI/ML) student with hands-on experience in AWS, Azure, Docker, Terraform, Kubernetes, and CI/CD tools. Eager to contribute to real-world cloud infrastructure projects and deliver production-ready solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container fade">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/omkarkrishna/CI-CD">CI/CD Project</a></li>
+            <li><a href="https://github.com/omkarkrishna/azure-cafe">Azure Café Project</a></li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container fade">
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="https://www.certification-link.com/aws">AWS Certified Solutions Architect</a></li>
+            <li><a href="https://www.certification-link.com/azure">Microsoft Certified: Azure Fundamentals</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container fade">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-feedback"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
